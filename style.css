@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(231, 231, 231);
+}
+
+/* Navigation Bar */
+
+nav {
+  background-color: #4e495d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.logo {
+  color: rgb(231, 231, 231);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(231, 231, 231);
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-decoration: none;   
+}
+
+/* Header */
+
+header {
+ background-color: #6c5aa3;
+ color: rgb(231, 231, 231);
+ display: flex;
+ padding: 100px 250px 300px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  padding: 20px 0px 10px;
+}
+
+h2 {
+  padding: 10px 0px;
+}
+
+img {
+  margin-left: 130px;
+  width: 450px;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background-color: #a35a9f;
+  display: flex;
+  padding: 100px 250px 600px;
+}
+
+/* Skills */
+
+.skills {
+  background-color: #6c5aa3;
+  display: flex;
+  padding: 100px 250px 600px;
+}
+
+/* About */
+
+.about {
+  background-color: #a35a9f;
+  display: flex;
+  padding: 100px 250px 600px;
+}
+
+/* Contact */
+
+.contact {
+  background-color: #6c5aa3;
+  display: flex;
+  padding: 100px 250px 600px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #4e495d;
+  display: flex;
+  padding: 50px 250px 50px;
+}
