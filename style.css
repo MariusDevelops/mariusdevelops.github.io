@@ -70,7 +70,6 @@ img {
   border: solid 1px white;
   border-radius: 20px;
   color: black;
-  font-style: bold;
   width: 150px;
   height: 40px;
 }
@@ -79,8 +78,19 @@ img {
 
 .portfolio {
   background-color: #a35a9f;
+  padding: 100px 250px 200px;
+}
+
+.flex-container {
   display: flex;
-  padding: 100px 250px 600px;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  background-color: #6d75a0;
+  height: 400px;
+  width: 300px;
+  margin: 10px;
 }
 
 /* Skills */
