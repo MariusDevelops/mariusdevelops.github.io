@@ -97,8 +97,12 @@ img {
 
 .skills {
   background-color: #6c5aa3;
-  display: flex;
   padding: 100px 250px 600px;
+}
+
+.icons img {
+  margin: 0;
+  width: 50px;
 }
 
 /* About */
