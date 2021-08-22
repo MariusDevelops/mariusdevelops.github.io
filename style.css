@@ -6,6 +6,31 @@
   color: rgb(231, 231, 231);
 }
 
+/* Base style */
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  padding: 20px 0px 10px;
+}
+
+h2 {
+  padding: 10px 0px;
+}
+
+img {
+  display: block;
+  width: 450px;
+}
+
+.button {
+  border: solid 1px white;
+  border-radius: 20px;
+  color: black;
+  width: 150px;
+  height: 40px;
+}
+
 /* Navigation Bar */
 
 nav {
@@ -42,36 +67,24 @@ nav {
   text-decoration: none;   
 }
 
-/* Header */
+/* Welcome section */
 
-header {
- background-color: #6c5aa3;
- color: rgb(231, 231, 231);
- display: flex;
- padding: 100px 250px 300px;
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 60px;
-  padding: 20px 0px 10px;
-}
-
-h2 {
-  padding: 10px 0px;
-}
-
-img {
-  margin-left: 130px;
-  width: 450px;
-}
-
-.button {
-  border: solid 1px white;
-  border-radius: 20px;
-  color: black;
-  width: 150px;
-  height: 40px;
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-red);
 }
 
 /* Portfolio */
