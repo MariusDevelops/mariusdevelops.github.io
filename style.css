@@ -1,9 +1,10 @@
 /* Custom properties/variables  */
 :root {
-  --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
+  --main-white: #d1f7ff;
+  --main-red: #ff2a6a;
+  --main-teal: #05d9e8;
+  --main-blue: #005678;
+  --main-gray: #01012b;
 }
 
 /* Base reset */
@@ -149,7 +150,7 @@ img {
 }
 
 .nav-list a:hover {
-  background: var(--main-blue);
+  background: var(--main-gray);
 }
 
 /* Welcome section */
@@ -161,11 +162,11 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(62deg, #01012b 0%, #211238 100%);
 }
 
-.welcome-section > p {
+.welcome-section a {
   font-size: 3rem;
   font-weight: 200;
   font-style: italic;
