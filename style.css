@@ -108,7 +108,7 @@ img {
 
 .button {
   border: solid 1px white;
-  border-radius: 20px;
+  border-radius: 50px;
   color: black;
   width: 150px;
   height: 40px;
@@ -123,7 +123,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  background: var(--main-gray);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -147,10 +147,11 @@ img {
   display: block;
   font-size: 2.2rem;
   padding: 2rem;
+  border-radius: 50px;
 }
 
 .nav-list a:hover {
-  background: var(--main-gray);
+  background: var(--main-red);
 }
 
 /* Welcome section */
@@ -178,13 +179,13 @@ img {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: var(--main-gray);
 }
 
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  /*border-bottom: 0.2rem solid var(--main-white);*/
 }
 
 @media (max-width: 28.75em) {
@@ -211,28 +212,30 @@ img {
 
   .projects-grid {
     grid-template-columns: 1fr;
+    border-radius: 50px;
   }
 }
 
 .project {
-  background: var(--main-gray);
+  background: var(--main-blue);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+  border-radius: 50px;
 }
 
 .code {
-  color: var(--main-gray);
+  color: var(--main-blue);
   transition: color 0.3s ease-out;
 }
 
 .project:hover .code {
-  color: #ff7f50;
+  color: var(--main-red);
 }
 
 .project-image {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  border-radius: 50px;
 }
 
 .project-title {
@@ -243,12 +246,12 @@ img {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 2px;
+  border-radius: 50px;
 }
 
 .btn-show-all {
   font-size: 2rem;
-  background: var(--main-gray);
+  background: var(--main-blue);
   transition: background 0.3s ease-out;
 }
 
@@ -264,42 +267,6 @@ img {
   margin-left: 10px;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
-}
-
-/* Skills */
-
-.skills {
-  background-color: #6c5aa3;
-  padding: 100px 250px 600px;
-}
-
-.icons img {
-  margin: 0;
-  width: 50px;
-}
-
-/* About */
-
-.about {
-  background-color: #a35a9f;
-  display: flex;
-  padding: 100px 250px 600px;
-}
-
-/* Contact */
-
-.contact {
-  background-color: #6c5aa3;
-  display: flex;
-  padding: 100px 250px 600px;
-}
-
-/* Footer */
-
-.footer {
-  background-color: #4e495d;
-  display: flex;
-  padding: 50px 250px 50px;
 }
 
 /* Contact section */
