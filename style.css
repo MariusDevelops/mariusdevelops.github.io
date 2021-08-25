@@ -106,14 +106,6 @@ img {
   width: 450px;
 }
 
-.button {
-  border: solid 1px white;
-  border-radius: 50px;
-  color: black;
-  width: 150px;
-  height: 40px;
-}
-
 /* nav */
 
 .nav {
@@ -172,6 +164,36 @@ img {
   font-weight: 200;
   font-style: italic;
   color: var(--main-red);
+}
+
+.button {
+  /*border: none;
+  border-radius: 50px;
+  color: black;
+  width: 150px;
+  height: 40px;*/
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 2rem;
+    color: var(--main-white);
+    background: var(--main-blue);
+    transition: background 0.3s ease-out;
+}
+
+.welcome-section .button:hover {
+  background: var(--main-red);
+}
+
+.button:hover i {
+  transform: translateX(2px);
+}
+
+.button i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
 }
 
 /* Projects section */
@@ -259,11 +281,11 @@ img {
   background: var(--main-red);
 }
 
-.btn-show-all:hover > i {
+.btn-show-all:hover i {
   transform: translateX(2px);
 }
 
-.btn-show-all > i {
+.btn-show-all i {
   margin-left: 10px;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
