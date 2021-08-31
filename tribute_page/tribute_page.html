@@ -11,24 +11,37 @@
   
   <!-- User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements. -->
 
-<main id="main">
+  <main id="main">
 
-  <!-- User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug"). -->
+    <!-- User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug"). -->
+      
+      <h1 id=title>Francis Bacon</h1>
+      
+    <!-- User Story #3: I should see a div element with a corresponding id="img-div". -->
+       
+    <!-- User Story #4: Within the img-div element, I should see an img element with a corresponding id="image". -->
     
-  <h1 id=title>Francis Bacon</h1>
-    
-  <!-- User Story #3: I should see a div element with a corresponding id="img-div". -->
-     
-  <!-- User Story #4: Within the img-div element, I should see an img element with a corresponding id="image". -->
-  
-  <!-- User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div. -->
-    
-  <figure id="img-div">
-    <img id="image" src="https://upload.wikimedia.org/wikipedia/en/a/af/Francis_Bacon_by_John_Dekin.jpg" alt="Francis Bacon portrait">
-    <figcaption id="img-caption">Bacon photographed in the early 1950s</figcaption>
-  </figure>
-    
+    <!-- User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div. -->
+      
+      <figure id="img-div">
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/en/a/af/Francis_Bacon_by_John_Dekin.jpg" alt="Francis Bacon portrait">
+        <figcaption id="img-caption">Bacon photographed in the early 1950s</figcaption>
+      </figure>
+      
+    <!-- User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page. -->
+      
+      <section id="tribute-info">
         
-  </main>
+    <!-- User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank"). -->
+        
+      <p>References:
+      <a id="tribute-link" href="https://en.wikipedia.org/wiki/Francis_Bacon_(artist)" target="_blank">Wikipedia</a>
+      </p>
+        
+        
+      </section>
+          
+    </main>
+
 </body>
 </html>
