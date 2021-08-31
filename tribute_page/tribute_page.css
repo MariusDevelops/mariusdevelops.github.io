@@ -1,16 +1,52 @@
+body {
+  font-family: Raleway, Roboto, Arial, Helvetica, sans-serif;;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #212121;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+
+  margin-bottom: 0;
+}
+
 /* User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 
 User Story #9: The img element should be centered within its parent element. */
 
-@media (max-width: 500px) {
-    #main {
-      color: green;
-    }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/* tribute section */
+
+h3 {
+  margin: 50px auto 0px auto;
+}
+
+ul {
+  list-style-type: none;
+  max-width: 800px;
+  margin: 50px auto 100px auto;
+  text-align: justify;
+  line-height: 20px;
+}
+
+li {
+  margin: 20px 0;
+}
+
+@media (max-width: 550px) {
+  #main {
+    color: green;
   }
-  
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-  }
+}
