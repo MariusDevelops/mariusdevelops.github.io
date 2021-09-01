@@ -19,9 +19,12 @@ h1 {
   padding-top: 50px;
 }
 
-h2 {
-
+h3 {
   margin-bottom: 0;
+}
+
+p {
+  padding: 0px 40px 0px 40px;
 }
 
 a {
@@ -34,7 +37,7 @@ a:link {
 }
 
 .ref {
-  padding: 50px 40px 50px 20px;
+  padding: 50px 40px 50px 40px;
 }
 
 /* User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
