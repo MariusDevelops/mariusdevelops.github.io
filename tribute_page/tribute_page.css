@@ -34,7 +34,7 @@ a:link {
 }
 
 .ref {
-  padding-bottom: 50px;
+  padding: 50px 40px 50px 20px;
 }
 
 /* User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
@@ -63,9 +63,9 @@ h3 {
 ul {
   list-style-type: none;
   max-width: 800px;
-  margin: 40px auto 100px auto;
+  margin: 40px auto 50px auto;
   text-align: justify;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 li {
