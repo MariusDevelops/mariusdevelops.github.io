@@ -51,6 +51,25 @@ User Story #6: If I enter an email that is not formatted correctly, I will see a
     />
   </div>
 
+<!-- User Story #7: Inside the form, I can enter a number in a field with id="number".
+
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+  
+  <div class="form-group">
+    <label id="number-label" for="number"
+      >Age<span class="clue">(optional)</span></label>
+    <input
+      type="number"
+      name="age"
+      id="number"
+      min="10"
+      max="99"
+      class="form-control"
+      placeholder="Age"
+    />
+  </div>
 
 </body>
 </html>
