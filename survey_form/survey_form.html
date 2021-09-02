@@ -17,8 +17,39 @@
 
   <p id="description">Thank you for taking the time to help me improve webpage</p>
 
+<!-- User Story #3: I can see a form with id="survey-form". -->
 
+  <form id="survey-form">
+  
+<!-- User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
+  
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      class="form-control"
+      placeholder="Enter your name"
+      required
+    />
+  </div>
 
+<!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+  
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      class="form-control"
+      placeholder="Enter your Email"
+      required
+    />
+  </div>
 
 
 </body>
