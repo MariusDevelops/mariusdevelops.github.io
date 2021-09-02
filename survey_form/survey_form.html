@@ -17,7 +17,11 @@
 
   <p id="description">Thank you for taking the time to help me improve webpage</p>
 
-<!-- User Story #3: I can see a form with id="survey-form". -->
+<!-- User Story #3: I can see a form with id="survey-form". 
+
+User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
 
   <form id="survey-form">
   
@@ -69,6 +73,49 @@ User Story #9: If I enter numbers outside the range of the number input, which a
       class="form-control"
       placeholder="Age"
     />
+  </div>
+
+<!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+  
+  <div class="form-group">
+    <p>Which option best describes your current role?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+      <option disabled selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+<!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+
+  <div class="form-group">
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <label>
+      <input
+        name="user-recommend"
+        value="definitely"
+        type="radio"
+        class="input-radio"
+        checked
+      />Definitely</label>
+    <label>
+      <input
+        name="user-recommend"
+        value="maybe"
+        type="radio"
+        class="input-radio"
+      />Maybe</label>
+
+    <label
+      ><input
+        name="user-recommend"
+        value="not-sure"
+        type="radio"
+        class="input-radio"
+      />Not sure</label>
   </div>
 
 </body>
