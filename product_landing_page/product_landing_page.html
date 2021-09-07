@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product_landing_page.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <title>Document</title>
 </head>
-<body>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-<div id="page-wrapper">
+  <body>
+  <div id="page-wrapper">
 
 <!--  User Story #1: My product landing page should have a header element with a corresponding id="header". -->
 
@@ -18,7 +18,7 @@
 
 <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
 
-      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo"/>
+      <img id="header-img" src="" alt="LOGO"/>
     </div>
 
 <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
@@ -43,23 +43,26 @@
      User Story #11: Within the form, there is a submit input with a corresponding id="submit".
      User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
 
+     <!-- EMAIL FORM START-->
   <section id="hero">
-    <h2>Handcrafted, home-made masterpieces</h2>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <h2>Get a 10% discount in all our website</h2>
+    <p>by subscribing to our newsletter</p>
+    <form id="form" action="#">
       <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
-      <input id="submit" type="submit" value="Get Started" class="btn"/>
+      <input id="submit" type="submit" value="Sign Up" class="btn"/>
     </form>
   </section>
+    <!-- EMAIL FORM END -->
 
   <div class="container">
+    <hr>
     <section id="features">
       <div class="grid">
-        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="icon"><i class="fas fa-3x fa-globe-europe"></i></div>
         <div class="desc">
-          <h2>Premium Materials</h2>
+          <h2>Free Shipping</h2>
           <p>
-            Our trombones use the shiniest brass which is sourced locally. This
-            will increase the longevity of your purchase.
+            Free premium worldwide shipping (on orders above 70€)
           </p>
         </div>
       </div>
@@ -68,8 +71,7 @@
         <div class="desc">
           <h2>Fast Shipping</h2>
           <p>
-            We make sure you recieve your trombone as soon as we have finished
-            making it. We also provide free returns if you are not satisfied.
+            Shipping all orders in 24-48 hours
           </p>
         </div>
       </div>
@@ -80,18 +82,22 @@
         <div class="desc">
           <h2>Quality Assurance</h2>
           <p>
-            For every purchase you make, we will ensure there are no damages or
-            faults and we will check and test the pitch of your instrument.
+            30 day return policy
           </p>
         </div>
       </div>
     </section>
+    <hr>
 
 <!-- User Story #6: I can watch an embedded product video with id="video". -->
 
+    <!-- YOUTUBE VIDEO START -->
     <section id="how-it-works">
       <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </section>
+    <!-- YOUTUBE VIDEO END -->
+
+
     <section id="pricing">
       <div class="product" id="tenor">
         <div class="level">Tenor Trombone</div>

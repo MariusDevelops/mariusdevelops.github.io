@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: white;
   font-family: 'Lato', sans-serif;
 }
 
@@ -62,7 +62,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #eee;
+  background-color: white;
 }
 
 /* User Story #14: My product landing page should have at least one media query. */
@@ -134,6 +134,7 @@ nav > ul {
   }
 }
 
+/* EMAIL FORM START  */
 #hero {
   display: flex;
   flex-direction: column;
@@ -141,11 +142,11 @@ nav > ul {
   justify-content: center;
   text-align: center;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 #hero > h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   word-wrap: break-word;
 }
 
@@ -153,6 +154,7 @@ nav > ul {
   max-width: 275px;
   width: 100%;
   padding: 5px;
+  text-align: center;
 }
 
 #hero input[type='submit'] {
@@ -161,13 +163,19 @@ nav > ul {
   height: 30px;
   margin: 15px 0;
   border: 0;
-  background-color: #f1c40f;
+  background-color: #ffffff;
 }
 
 #hero input[type='submit']:hover {
-  background-color: orange;
+  background-color: #c57dff;
   transition: background-color 1s;
 }
+
+#form {
+  padding-top: 20px;
+}
+/* EMAIL FORM END */
+
 
 @media (max-width: 650px) {
   #hero {
@@ -185,7 +193,7 @@ nav > ul {
   justify-content: center;
   height: 125px;
   width: 20vw;
-  color: darkorange;
+  color: #202020;
 }
 
 @media (max-width: 550px) {
