@@ -174,14 +174,43 @@ nav > ul {
 #form {
   padding-top: 20px;
 }
-/* EMAIL FORM END */
-
 
 @media (max-width: 650px) {
   #hero {
     margin-top: 120px;
   }
 }
+/* EMAIL FORM END */
+
+
+/* FEATURES SECTION START */
+.features {
+  background: white;
+  color: grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.features figure {
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.features figure img {
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: grey 0px 0px 10px;
+  width: 200px;
+}
+/* FEATURES SECTION END */
+
+
+
+
 
 #features {
   margin-top: 30px;
