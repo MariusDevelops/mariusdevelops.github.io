@@ -121,6 +121,7 @@ nav {
   }
   nav li {
     padding-bottom: 5px;
+    line-height: 1.5;
   }
 }
 
@@ -324,6 +325,7 @@ nav > ul {
   #pricing {
     flex-direction: column;
   }
+
   .product {
     max-width: 300px;
     width: 100%;
@@ -339,6 +341,7 @@ nav > ul {
 footer {
   margin-top: 30px;
   padding: 20px;
+  text-align: center;
 }
 
 footer > ul {
