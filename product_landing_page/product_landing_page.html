@@ -11,30 +11,24 @@
   <body>
   <div id="page-wrapper">
 
-<!--  User Story #1: My product landing page should have a header element with a corresponding id="header". -->
-
-  <header id="header">
-    <div class="logo">
-
-<!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
-
-      <img id="header-img" src="" alt="LOGO"/>
-    </div>
-
-<!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+<!--  User Story #1: My product landing page should have a header element with a corresponding id="header".
+User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
      User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
      User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
 
+  <header id="header">
+    <div class="logo">
+      <img id="header-img" src="" alt="LOGO"/>
+    </div>
     <nav id="nav-bar">
       <ul>
-        <li><a class="nav-link" href="#features">Features</a></li>
-        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#product">Product</a></li>
         <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#features">Features</a></li>
       </ul>
     </nav>
   </header>
-
-  <div class="container"></div>
 
 <!-- User Story #7: My landing page has a form element with a corresponding id="form".
      User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
@@ -43,7 +37,10 @@
      User Story #11: Within the form, there is a submit input with a corresponding id="submit".
      User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
 
-     <!-- EMAIL FORM START-->
+  <div class="container">
+
+    <!-- EMAIL FORM START-->
+  <hr>
   <section id="hero">
     <hr>
     <h2>Get a 10% discount in all our website</h2>
@@ -55,84 +52,92 @@
   </section>
     <!-- EMAIL FORM END -->
 
-  <div class="container">
-    <hr>
-
-    <!-- FEATURES SECTION START -->
-    <section class="features">
-    <figure>
-      <div class="icon"><i class="fas fa-3x fa-globe-europe"></i></div>
-      <figcaption><h3>Free Shiping</h3></figcaption>
-      <figcaption>Free premium worldwide <br> shipping <br> (on orders above 70€)</figcaption>
-    </figure>
-
-    <figure>
-      <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-      <figcaption><h3>Fast Shipping</h3></figcaption>
-      <figcaption>Shipping all orders <br> in 24-48 hours</figcaption>
-    </figure>
-
-    <figure>
-      <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
-      <figcaption><h3>Quality Assurance</h3></figcaption>
-      <figcaption>30 day return <br> policy</figcaption>
-    </figure>
-    </section>
-      <hr>
-    <!-- FEATURES SECTION END -->
+  <hr>
 
 <!-- User Story #6: I can watch an embedded product video with id="video". -->
 
-    <!-- YOUTUBE VIDEO START -->
-    <section id="how-it-works">
-      <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </section>
-    <!-- YOUTUBE VIDEO END -->
+  <!-- YOUTUBE VIDEO START -->
+  <section id="how-it-works">
+    <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </section>
+  <!-- YOUTUBE VIDEO END -->
 
 
-    <section id="pricing">
-      <div class="product" id="tenor">
-        <div class="level">Tenor Trombone</div>
-        <h2>$600</h2>
-        <ol>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-      <div class="product" id="bass">
-        <div class="level">Bass Trombone</div>
-        <h2>$900</h2>
-        <ol>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-      <div class="product" id="valve">
-        <div class="level">Valve Trombone</div>
-        <h2>$1200</h2>
-        <ol>
-          <li>Plays similar to a Trumpet</li>
-          <li>Great for Jazz Bands</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-    </section>
+  <!-- PRODUCT START -->
+  <section id="pricing">
+    <div class="product" id="tenor">
+      <div class="level">Tenor Trombone</div>
+      <h2>$600</h2>
+      <ol>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ol>
+      <button class="btn">Select</button>
+    </div>
+    <div class="product" id="bass">
+      <div class="level">Bass Trombone</div>
+      <h2>$900</h2>
+      <ol>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ol>
+      <button class="btn">Select</button>
+    </div>
+    <div class="product" id="valve">
+      <div class="level">Valve Trombone</div>
+      <h2>$1200</h2>
+      <ol>
+        <li>Plays similar to a Trumpet</li>
+        <li>Great for Jazz Bands</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ol>
+      <button class="btn">Select</button>
+    </div>
+  </section>
+  <!-- PRODUCT END -->
+
+  <hr>
+
+  <!-- FEATURES SECTION START -->
+  <section class="features">
+  <figure>
+    <div class="icon"><i class="fas fa-3x fa-globe-europe"></i></div>
+    <figcaption><h3>Free Shiping</h3></figcaption>
+    <figcaption>Free premium worldwide <br> shipping <br> (on orders above 70€)</figcaption>
+  </figure>
+
+  <figure>
+    <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+    <figcaption><h3>Fast Shipping</h3></figcaption>
+    <figcaption>Shipping all orders <br> in 24-48 hours</figcaption>
+  </figure>
+
+  <figure>
+    <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
+    <figcaption><h3>Quality Assurance</h3></figcaption>
+    <figcaption>30 day return <br> policy</figcaption>
+  </figure>
+  </section>
+    <hr>
+    <!-- FEATURES SECTION END -->
+
+
+    <!-- FOOTER SECTION START-->
     <footer>
       <ul>
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <span>Copyright 2016, Original Trombones</span>
+      <span>Created by Marius Bražas 2021.</span>
     </footer>
+    <!-- FOOTER SECTION END-->
+
   </div>
 </div>
 </body>
