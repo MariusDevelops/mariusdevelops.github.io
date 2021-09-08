@@ -1,4 +1,4 @@
-/** global element styling **/
+/* global element styling */
 
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
@@ -26,7 +26,7 @@ a {
   text-decoration: none;
 }
 
-/** global classes styling **/
+/* global classes styling */
 
 .container {
   max-width: 1000px;
@@ -54,6 +54,9 @@ a {
 
 /* User Story #13: The navbar should always be at the top of the viewport.  */
 
+
+
+/* NAVIGATION BAR START */ 
 header {
   position: fixed;
   top: 0;
@@ -88,7 +91,7 @@ header {
 .logo > img {
   width: 100%;
   height: 100%;
-  max-width: 300px;
+  max-width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,6 +124,24 @@ nav {
   }
 }
 
+nav li a {
+  padding: 10px 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 0px rgb(255, 255, 255) solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+nav li a:hover {
+  background-color: #c57dff;
+  transition: background-color 1s;
+}
+
 nav > ul {
   width: 35vw;
   display: flex;
@@ -133,6 +154,9 @@ nav > ul {
     flex-direction: column;
   }
 }
+/* NAVIGATION BAR END */ 
+
+
 
 /* EMAIL FORM START  */
 #hero {
@@ -183,6 +207,7 @@ nav > ul {
 /* EMAIL FORM END */
 
 
+
 /* FEATURES SECTION START */
 .features {
   background: white;
@@ -226,6 +251,7 @@ nav > ul {
 /* FEATURES SECTION END */
 
 
+
 /* PPRODUCT VIDEO START */
 #how-it-works {
   margin-top: 50px;
@@ -238,6 +264,7 @@ nav > ul {
   width: 100%;
 }
 /* PPRODUCT VIDEO END */
+
 
 
 /* PRICING START */
@@ -305,6 +332,7 @@ nav > ul {
   }
 }
 /* PRICING END */
+
 
 
 /* FOOTER START */
