@@ -226,7 +226,7 @@ nav > ul {
 /* FEATURES SECTION END */
 
 
-
+/* PPRODUCT VIDEO START */
 #how-it-works {
   margin-top: 50px;
   display: flex;
@@ -237,7 +237,10 @@ nav > ul {
   max-width: 560px;
   width: 100%;
 }
+/* PPRODUCT VIDEO END */
 
+
+/* PRICING START */
 #pricing {
   margin-top: 60px;
   display: flex;
@@ -252,12 +255,12 @@ nav > ul {
   text-align: center;
   width: calc(100% / 3);
   margin: 10px;
-  border: 1px solid #000;
+  border: 0.5px solid #000;
   border-radius: 3px;
 }
 
 .product > .level {
-  background-color: #ddd;
+  background-color: white;
   color: black;
   padding: 15px 0;
   width: 100%;
@@ -271,6 +274,7 @@ nav > ul {
 
 .product > ol {
   margin: 15px 0;
+  padding: 10px 20px 10px 20px;
 }
 
 .product > ol > li {
@@ -280,12 +284,12 @@ nav > ul {
 .product > button {
   border: 0;
   margin: 15px 0;
-  background-color: #f1c40f;
+  background-color: white;
   font-weight: 400;
 }
 
 .product > button:hover {
-  background-color: orange;
+  background-color: #c57dff;
   transition: background-color 1s;
 }
 
@@ -300,6 +304,7 @@ nav > ul {
     margin-bottom: 10px;
   }
 }
+/* PRICING END */
 
 
 /* FOOTER START */
