@@ -25,7 +25,7 @@ User Story #14: On regular sized devices (laptops, desktops), the element with i
     <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
     <li><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
     <li><a class="nav-link" href="#Nesting_elements">Nesting elements</a></li>
-    <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+    <li><a class="nav-link" href="#Block_versus_inline_elements">Block versus inline elements</a></li>
     <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
     <li><a class="nav-link" href="#Constants">Constants</a></li>
     <li><a class="nav-link" href="#Data_types">Data types</a></li>
@@ -79,6 +79,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
 
   <section class="main-section" id="Anatomy_of_an_HTML_element">
     <header>Anatomy of an HTML element</header>
+    <article>
     <p>The anatomy of our element is:</p>
     <ul>
       <li>The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
@@ -86,6 +87,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
       <li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
     </ul>
     <p>The element is the opening tag, followed by content, followed by the closing tag.</p>
+    </article>
   </section>
 
   <section class="main-section" id="Nesting_elements">
@@ -100,37 +102,23 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
     </article>
   </section>
 
-  <section class="main-section" id="Variable_scope">
-    <header>Variable scope</header>
+  <section class="main-section" id="Block_versus_inline_elements">
+    <header>Block versus inline elements</header>
     <article>
-      <p>
-        When you declare a variable outside of any function, it is called a
-        global variable, because it is available to any other code in the
-        current document. When you declare a variable within a function, it is
-        called a local variable, because it is available only within that
-        function.
-      </p>
+      <p>There are two important categories of elements to know in HTML: block-level elements and inline elements.</p>
+      <ul>
+        <li>Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</li>
+        <li>Inline elements are contained within block-level elements, and surround only small parts of the document’s content (not entire paragraphs or groupings of content). An inline element will not cause a new line to appear in the document. It is typically used with text, for example an &lt;a&gt; element creates a hyperlink, and elements such as &lt;em&gt; or &lt;strong&gt; create emphasis.</li>
+      </ul>
+      <p>Consider the following example:</p>
+      <code>&lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em>&lt;em&gt;third&lt;/em&gt;
+        &lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p>&lt;p&gt;sixth&lt;/p&gt;</code>
+      <p>&lt;em&gt; is an inline element. As you see below, the first three elements sit on the same line, with no space in between. On the other hand, &lt;p&gt; is a block-level element. Each p element appears on a new line, with space above and below. (The spacing is due to default CSS styling that the browser applies to paragraphs.)</p>
 
-      <p>
-        JavaScript before ECMAScript 2015 does not have block statement scope;
-        rather, a variable declared within a block is local to the function (or
-        global scope) that the block resides within. For example the following
-        code will log 5, because the scope of x is the function (or global
-        context) within which x is declared, not the block, which in this case
-        is an if statement.
-      </p>
-      <code>if (true) { var x = 5; } console.log(x); // 5</code>
-      <p>
-        This behavior changes, when using the let declaration introduced in
-        ECMAScript 2015.
-      </p>
-
-      <code
-        >if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-        defined</code
-      >
+    
     </article>
   </section>
+
   <section class="main-section" id="Global_variables">
     <header>Global variables</header>
     <article>
