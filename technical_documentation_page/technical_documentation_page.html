@@ -23,8 +23,8 @@ User Story #14: On regular sized devices (laptops, desktops), the element with i
     <li><a class="nav-link" href="#What_is_HTML">What is HTML</a></li>
     <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
     <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-    <li><a class="nav-link" href="#Variables">Variables</a></li>
-    <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+    <li><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+    <li><a class="nav-link" href="#Nesting_elements">Nesting elements</a></li>
     <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
     <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
     <li><a class="nav-link" href="#Constants">Constants</a></li>
@@ -71,52 +71,35 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   <section class="main-section" id="Hello_world">
     <header>Hello world</header>
     <article>
-      To get started with writing HTML, open the Notepad and write your
-      first "Hello world" HTML code:
+      <p>To get started with writing HTML, open the Notepad and write your first "Hello world" HTML code:</p>
       <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&nbsp;&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</code>
-      Save file to your computer with a name "index.html". Open HTML file in your browser. Congratulations. You just wrote your first line of code!
+      <p>Save file to your computer with a name "index.html". Open HTML file in your browser. Congratulations. You just wrote your first line of code!</p>
     </article>
   </section>
 
-  <section class="main-section" id="Variables">
-    <header>Variables</header>
-    <p>
-      You use variables as symbolic names for values in your application. The
-      names of variables, called identifiers, conform to certain rules.
-    </p>
-    <p>
-      A JavaScript identifier must start with a letter, underscore (_), or
-      dollar sign ($); subsequent characters can also be digits (0-9). Because
-      JavaScript is case sensitive, letters include the characters "A" through
-      "Z" (uppercase) and the characters "a" through "z" (lowercase).
-    </p>
-    <p>
-      You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
-      You can also use the Unicode escape sequences as characters in
-      identifiers. Some examples of legal names are Number_hits, temp99, and
-      _name.
-    </p>
+  <section class="main-section" id="Anatomy_of_an_HTML_element">
+    <header>Anatomy of an HTML element</header>
+    <p>The anatomy of our element is:</p>
+    <ul>
+      <li>The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+      <li>The content: This is the content of the element. In this example, it is the paragraph text.</li>
+      <li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+    </ul>
+    <p>The element is the opening tag, followed by content, followed by the closing tag.</p>
   </section>
-  <section class="main-section" id="Declaring_variables">
-    <header>Declaring variables</header>
+
+  <section class="main-section" id="Nesting_elements">
+    <header>Nesting elements</header>
     <article>
-      You can declare a variable in three ways:
-      <p>
-        With the keyword var. For example, <code>var x = 42.</code> This syntax
-        can be used to declare both local and global variables.
-      </p>
-      <p>
-        By simply assigning it a value. For example, <code>x = 42.</code> This
-        always declares a global variable. It generates a strict JavaScript
-        warning. You shouldn't use this variant.
-      </p>
-      <p>
-        With the keyword let. For example,<code> let y = 13.</code> This syntax
-        can be used to declare a block scope local variable. See Variable scope
-        below.
-      </p>
+      <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong(er) text formatting:</p>
+      <code>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;</code>
+      <p>There is a right and wrong way to do nesting. In the example above, we opened the p element first, then opened the strong element. For proper nesting, we should close the strong element first, before closing the p.</p>
+      <p>The following is an example of the wrong way to do nesting:</p>
+      <code>&lt;p&gt;My cat is &lt;strong&gt;very grumpy.&lt;/p&gt;</strong></code>
+      <p>The tags have to open and close in a way that they are inside or outside one another. With the kind of overlap in the example above, the browser has to guess at your intent. This kind of guessing can result in unexpected results.</p>
     </article>
   </section>
+
   <section class="main-section" id="Variable_scope">
     <header>Variable scope</header>
     <article>
