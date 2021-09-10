@@ -28,7 +28,7 @@ User Story #14: On regular sized devices (laptops, desktops), the element with i
     <li><a class="nav-link" href="#Block_versus_inline_elements">Block versus inline elements</a></li>
     <li><a class="nav-link" href="#Empty_elements">Empty elements</a></li>
     <li><a class="nav-link" href="#Attributes">Attributes</a></li>
-    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li><a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
     <li><a class="nav-link" href="#if...else_statement">if...else statement</a>
     </li><li><a class="nav-link" href="#while_statement">while statement</a></li>
     <li><a class="nav-link" href="#Function_declarations">Function declarations</a>
@@ -138,39 +138,23 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
     </article>
   </section>
 
-  <section class="main-section" id="Data_types">
-    <header>Data types</header>
+  <section class="main-section" id="Anatomy_of_an_HTML_document">
+    <header>Anatomy of an HTML document</header>
     <article>
-      <p>The latest ECMAScript standard defines seven data types:</p>
+      <p>Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:</p>
+      <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&nbsp;&lt;head&gt;<br>&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>&nbsp;&nbsp;&lt;title>My test page&lt;/title&gt;<br>&nbsp;&lt;/head&gt;<br>&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&lt;p>This is my page&lt;/p&gt;<br>&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</code>
+      <p>Here we have:</p>
       <ul>
-        <li>
-          <p>Six data types that are primitives:</p>
-          <ul>
-            <li>Boolean. true and false.</li>
-            <li>
-              null. A special keyword denoting a null value. Because JavaScript
-              is case-sensitive, null is not the same as Null, NULL, or any
-              other variant.
-            </li>
-            <li>undefined. A top-level property whose value is undefined.</li>
-            <li>Number. 42 or 3.14159.</li>
-            <li>String. "Howdy"</li>
-            <li>
-              Symbol (new in ECMAScript 2015). A data type whose instances are
-              unique and immutable.
-            </li>
-          </ul>
-        </li>
-
-        <li>and Object</li>
-      </ul>
-      Although these data types are a relatively small amount, they enable you
-      to perform useful functions with your applications. Objects and functions
-      are the other fundamental elements in the language. You can think of
-      objects as named containers for values, and functions as procedures that
-      your application can perform.
+        <li>&lt;!DOCTYPE html&gt;: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.</li>
+        <li>&lt;html&gt;&lt;/html&gt;: The &lt;html&gt; element. This element wraps all the content on the page. It is sometimes known as the root element.</li>
+        <li>&lt;head&gt;&lt;/head&gt;: The &lt;head&gt; element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more.</li>
+        <li>&lt;meta charset="utf-8"&gt;: This element specifies the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.</li>
+        <li>&lt;title&gt;&lt;/title&gt;: The &lt;title&gt; element. This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.</li>
+        <li>&lt;body&gt;&lt;/body&gt;: The &lt;body&gt; element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.</li>
+      </ul>  
     </article>
   </section>
+
   <section class="main-section" id="if...else_statement">
     <header>if...else statement</header>
     <article>
