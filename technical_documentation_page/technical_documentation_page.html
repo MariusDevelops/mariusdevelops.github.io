@@ -47,7 +47,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
 <main id="main-doc">
 
   <section class="main-section" id="What_is_HTML">
-    <header>What is HTML?</header>
+    <header class="stuck">What is HTML?</header>
     <article>
       <p>HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.  For example, consider the following line of text:</p>
       <code>My cat is very grumpy</code>
@@ -57,7 +57,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="What_you_should_already_know">
-    <header>What you should already know</header>
+    <header class="stuck">What you should already know</header>
     <article>
       <p>This guide assumes you have the following basic background:</p>
       <ul>
@@ -69,7 +69,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Hello_world">
-    <header>Hello world</header>
+    <header class="stuck">Hello world</header>
     <article>
       <p>To get started with writing HTML, open the Notepad and write your first "Hello world" HTML code:</p>
       <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&nbsp;&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</code>
@@ -78,7 +78,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Anatomy_of_an_HTML_element">
-    <header>Anatomy of an HTML element</header>
+    <header class="stuck">Anatomy of an HTML element</header>
     <article>
     <p>The anatomy of our element is:</p>
     <ul>
@@ -91,7 +91,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Nesting_elements">
-    <header>Nesting elements</header>
+    <header class="stuck">Nesting elements</header>
     <article>
       <p>Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong(er) text formatting:</p>
       <code>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;</code>
@@ -103,7 +103,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Block_versus_inline_elements">
-    <header>Block versus inline elements</header>
+    <header class="stuck">Block versus inline elements</header>
     <article>
       <p>There are two important categories of elements to know in HTML: block-level elements and inline elements.</p>
       <ul>
@@ -118,7 +118,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Empty_elements">
-    <header>Empty elements</header>
+    <header class="stuck">Empty elements</header>
     <article>
       <p>Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert/embed something in the document. For example, the &lt;img&gt; element embeds an image file onto a page:</p>
       <code>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;</code>
@@ -126,7 +126,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Attributes">
-    <header>Attributes</header>
+    <header class="stuck">Attributes</header>
     <article>
       <p>Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.</p>
       <p>An attribute should have:</p>
@@ -139,7 +139,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Anatomy_of_an_HTML_document">
-    <header>Anatomy of an HTML document</header>
+    <header class="stuck">Anatomy of an HTML document</header>
     <article>
       <p>Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:</p>
       <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&nbsp;&lt;head&gt;<br>&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>&nbsp;&nbsp;&lt;title>My test page&lt;/title&gt;<br>&nbsp;&lt;/head&gt;<br>&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&lt;p>This is my page&lt;/p&gt;<br>&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</code>
@@ -156,7 +156,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Whitespace_in_HTML">
-    <header>Whitespace in HTML</header>
+    <header class="stuck">Whitespace in HTML</header>
     <article>
       <p>In the examples above, you may have noticed that a lot of whitespace is included in the code. This is optional. These two code snippets are equivalent:</p>
       <code>&lt;p&gt;Dogs are silly.&lt;/p&gt;<br>&lt;p&gt;Dogs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;silly.&lt;/p&gt;</code>
@@ -165,7 +165,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="HTML_comments">
-    <header>HTML comments</header>
+    <header class="stuck">HTML comments</header>
     <article>
     <p>HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.</p>
     <p>To write an HTML comment, wrap it in the special markers &lt;!-- and --&gt;. For example:</p>
@@ -174,7 +174,7 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Summary">
-    <header>Summary</header>
+    <header class="stuck">Summary</header>
     <article>
       <p>You made it to the end of the article! We hope you enjoyed your tour of the basics of HTML.</p>
       <p>At this point, you should understand what HTML looks like, and how it works at a basic level. You should also be able to write a few elements and attributes. The subsequent articles of this module go further on some of the topics introduced here, as well as presenting other concepts of the language.</p>
@@ -182,10 +182,10 @@ User Story #7: The .main-section elements should contain at least 5 li items tot
   </section>
 
   <section class="main-section" id="Reference">
-    <header>Reference</header>
+    <header class="stuck">Reference</header>
     <article>
       <ul>
-        <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN</a></li>
+        <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank" class="link-decor">MDN</a></li>
       </ul>
     </article>
   </section>
