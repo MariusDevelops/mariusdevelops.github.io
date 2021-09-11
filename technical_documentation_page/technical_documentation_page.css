@@ -29,7 +29,7 @@ header {
 #main-doc header {
   color: rgb(121, 77, 240);
   text-align: left;
-  margin: 0px;
+  margin: 30px 0px 20px;
 }
 
 #navbar ul {
@@ -37,6 +37,10 @@ header {
   padding: 0px 0px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }
 
 #navbar li {
@@ -65,6 +69,7 @@ header {
   margin-left: 310px;
   padding: 50px;
   margin-bottom: 110px;
+  text-align: justify;
 }
 
 section article {
