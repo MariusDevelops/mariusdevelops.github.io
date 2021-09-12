@@ -1,6 +1,29 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h3 {
+    padding: 50px 0px 10px 0px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(173, 58, 226);
+}
+
 .grid {
+    background-color: rgb(173, 58, 226);
+    border-radius: 20px;
+    padding: 20px;
+    margin:  0px auto 50px;
     display: flex;
     flex-wrap: wrap;
     height: 300px;
     width: 400px;
 }
+
+@media (max-width: 420px) {
+    .grid {
+        padding: 10px;
+        height: 400px;
+        width: 300px;
+    }
+  }
