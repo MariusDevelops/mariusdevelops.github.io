@@ -1,10 +1,10 @@
 :root {
   --main-white: #ffffff;
+  --main-darkBlue: #011640;
   --main-red: #ff2a6a;
   --main-teal: #05d9e8;
   --main-blue: #005678;
   --main-gray: #01012b;
-  --main-darkBlue: #011640;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.9;
   color: var(--main-darkBlue);
 }
 
@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 ul {
@@ -93,52 +93,47 @@ img {
 
 .welcome-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: justify;
   width: 100%;
   height: 100vh;
   background-color: var(--main-white);
 }
 
-.welcome-section a {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--main-red);
+.welcome-section h2{
+  text-align: left;
+  padding: 60px 60px 20px 20px;
 }
 
-.button {
-  position: relative;
-  z-index: 1;
-  /*border: none;
-  border-radius: 50px;
-  color: black;
-  width: 150px;
-  height: 40px;*/
-    display: inline-block;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 2rem;
-    color: var(--main-white);
-    background: var(--main-blue);
-    transition: background 0.3s ease-out;
+.welcome-section p {
+  text-align: justify;
+  padding: 0px 50px 0px 20px;
 }
 
-.welcome-section .button:hover {
-  background: var(--main-red);
+.ws1 {
+  background-color: rgb(255, 255, 255);
+  height: 450px;
+  width: 400px;
+  border-right: solid rgba(55, 56, 58, 0.2);
+  border-width: 3px;
 }
 
-.button:hover i {
-  transform: translateX(2px);
+.ws2 {
+  background-color: rgb(255, 255, 255);
+  height: 450px;
+  width: 600px;
 }
 
-.button i {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
+.ws2 h2{
+  text-align: left;
+  padding: 10px 20px 10px 50px;
+}
+
+.ws2 p {
+  text-align: justify;
+  padding: 0px 20px 0px 50px;
 }
 
 
