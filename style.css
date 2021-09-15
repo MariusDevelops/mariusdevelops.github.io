@@ -151,7 +151,7 @@ span {
   padding: 0px 20px 0px 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .welcome-section {
     display: flex;
     flex-direction: column;
