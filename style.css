@@ -2,9 +2,7 @@
   --main-white: #ffffff;
   --main-darkBlue: #011640;
   --main-purple: #8f79f2;
-  --main-teal: #05d9e8;
-  --main-blue: #005678;
-  --main-gray: #01012b;
+  --main-shadow: rgba(55, 56, 58, 0.2);
 }
 
 * {
@@ -69,7 +67,7 @@ img {
   width: 100%;
   min-height: 75px;
   background-color: #fff;
-  box-shadow: 0 10px 10px -10px rgba(55, 56, 58, 0.2);
+  box-shadow: 0 10px 10px -10px var(--main-shadow);
   z-index: 10;
 }
 
@@ -83,10 +81,9 @@ img {
   padding: 0px 20px;
 }
 
-/*.nav-list a:hover {
-  background: var(--main-red);
-}*/
-
+nav a:hover .code {
+  color: var(--main-purple);
+}
 
 
 /* Welcome section */
@@ -106,7 +103,7 @@ img {
   background-color: rgb(255, 255, 255);
   height: 450px;
   width: 400px;
-  border-right: solid rgba(55, 56, 58, 0.2);
+  border-right: solid var(--main-shadow);
   border-width: 3px;
 }
 
@@ -139,7 +136,7 @@ span {
 }
 
 .ws2 {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--main-white);
   height: 450px;
   width: 350px;
 }
@@ -159,7 +156,7 @@ span {
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 100px 20px;
   background: var(--main-white);
 }
 
@@ -168,9 +165,9 @@ span {
   margin: 0 auto 6rem auto;
 }
 
-@media (max-width: 28.75em) {
+@media (max-width: 2875px) {
   .projects-section-header {
-    font-size: 4rem;
+    font-size: 25px;
   }
 }
 
@@ -181,12 +178,12 @@ span {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 6rem;
+  margin-bottom: 0px;
 }
 
-@media (max-width: 30.625em) {
+@media (max-width: 362px) {
   .projects-section {
-    padding: 6rem 1rem;
+    padding: 60px 10px;
   }
 
   .projects-grid {
@@ -197,7 +194,7 @@ span {
 
 .project {
   background: var(--main-white);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px var(--main-shadow);
   border-radius: 5px;
 }
 
@@ -303,8 +300,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
+  background: var(--main-white);
+  border-top: 2px solid var(--main-shadow);
 }
 
 footer > p {
@@ -315,7 +312,7 @@ footer i {
   vertical-align: middle;
 }
 
-@media (max-width: 28.75em) {
+@media (max-width: 28.7em) {
   footer {
     flex-direction: column;
     text-align: center;
