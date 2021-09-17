@@ -1,8 +1,8 @@
 :root {
   --main-white: #ffffff;
-  --main-darkBlue: #011640;
+  --main-darkBlue: #190140;
   --main-purple: #8f79f2;
-  --main-shadow: rgba(55, 56, 58, 0.2);
+  --main-shadow: rgba(55, 55, 55, 0.2);
 }
 
 * {
