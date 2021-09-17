@@ -20,6 +20,20 @@ h3 {
     width: 400px;
 }
 
+a, p {
+    color: rgb(173, 58, 226);
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: rgb(173, 58, 226);
+  }
+  
+  .ref {
+    padding: 100px 40px 50px 40px;
+    text-align: center;
+  }
+
 @media (max-width: 420px) {
     .grid {
         padding: 10px;
