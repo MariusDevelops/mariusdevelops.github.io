@@ -9,10 +9,18 @@
 </head>
 <body>
     <!-- Section with input, button to check result. Result answers if text input is palindrome or not -->
-    <div id="container">
-        <input type="text" id="userInput" placeholder="Enter a word...">
-        <button id="button">Check</button>
-        <span id="result">Palindrome or not...</span> <!-- will be manipulating rezult in JS -->
+    <div class="container">
+        <h1>Palindrome Checker with JavaScript</h1>
+        <p>Enter your word below</p>
+
+        <form id="myForm">
+          <input id="wordInput" type="text" />
+          <button>Submit</button>
+        </form>
+
+        <br />
+
+        <div id="answer"></div>
     </div>
 
 <!-- Script -->
