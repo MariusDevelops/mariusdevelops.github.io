@@ -89,6 +89,7 @@ window.addEventListener("DOMContentLoaded", function () {
   displayMenuButtons();
 });
 
+// Display menu items in function and join them into section center
 function diplayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     // console.log(item);
@@ -106,11 +107,14 @@ function diplayMenuItems(menuItems) {
             </div>
           </article>`;
   });
+
   displayMenu = displayMenu.join("");
   // console.log(displayMenu);
 
   sectionCenter.innerHTML = displayMenu;
 }
+
+// Set buttons for unique categories
 function displayMenuButtons() {
   const categories = menu.reduce(
     function (values, item) {
@@ -133,6 +137,7 @@ function displayMenuButtons() {
   const filterBtns = btnContainer.querySelectorAll(".filter-btn");
   console.log(filterBtns);
 
+  // Filter button function
   filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       // console.log(e.currentTarget.dataset);
@@ -151,3 +156,20 @@ function displayMenuButtons() {
     });
   });
 }
+
+/*
+    Recap:
+
+    Objective: once you press "+"" icon it shows question text, and once you press "-" button it removes question text.
+    If you press new question while first ones text is open, then first ones text is closed automaticly.
+
+    1. Define variables.
+    1.1. Menu objects.
+    1.2. Section center.
+    1.3. Button container.
+
+    2. Display menu items in function and join them into section center.
+    3. Filter button function. Use currentTarget and dataset.
+    Filter buttons so they matches what they got in category.
+    4. Set buttons for unique categories.
+*/
