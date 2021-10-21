@@ -169,7 +169,9 @@ function displayMenuButtons() {
     1.3. Button container.
 
     2. Display menu items in function and join them into section center.
+
     3. Filter button function. Use currentTarget and dataset.
     Filter buttons so they matches what they got in category.
+    
     4. Set buttons for unique categories.
 */

@@ -21,3 +21,17 @@ const preloader = document.querySelector(".preloader");
 window.addEventListener("load", function () {
   preloader.classList.add("hide-preloader");
 });
+
+/*
+    Recap:
+
+    Objective: use JS to bring video button forward.
+
+    1. Define variables.
+    1.1. Button.
+    1.2. Video.
+
+    2. Function for button. Slide class gos to button.
+
+    3. Video preloader function.    
+*/
