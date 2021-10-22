@@ -82,3 +82,17 @@ scrollLinks.forEach((link) => {
   });
 });
 // calculate heights
+
+/*
+    Recap:
+
+    Objective:
+
+    1. Define variables.
+    1.1. 
+    1.2.
+
+    2. .
+
+    3.    
+*/
