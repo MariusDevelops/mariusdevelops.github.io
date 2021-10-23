@@ -15,7 +15,6 @@ const links = document.querySelector(".links");
 
 navToggle.addEventListener("click", function () {
   // linksContainer.classList.toggle("show-links");
-
   const linksHeight = links.getBoundingClientRect().height;
   const containerHeight = linksContainer.getBoundingClientRect().height;
   if (containerHeight === 0) {
@@ -27,7 +26,6 @@ navToggle.addEventListener("click", function () {
 });
 
 // ********** fixed navbar ************
-
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
 
@@ -39,8 +37,8 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("fixed-nav");
   }
-  // setup back to top link
 
+  // setup back to top link
   if (scrollHeight > 500) {
     console.log("helo");
 
@@ -86,13 +84,14 @@ scrollLinks.forEach((link) => {
 /*
     Recap:
 
-    Objective:
+    Objective: Create a scroll that works good with navbar,
+    stops at right headings and have arrow go back to home. 
 
-    1. Define variables.
-    1.1. 
-    1.2.
+    1. Every year date change in footer.
 
-    2. .
+    2. Close navlist when pressed. Automatic navbar height change according to amount of items in navbar.
 
-    3.    
+    3. Fixed scroll bar and arrow link come back to top of page.
+
+    4. Smooth scroll. Navbar links straight to section header.
 */
