@@ -18,12 +18,12 @@ const result = document.querySelector(".lorem-text");
 form.addEventListener("submit", function (e) {
   // A click on a form submit button – initiates its submission to the server.
 
-  e.preventDefault();
+  e.preventDefault(); // prevent default submit behavor
 
-  const value = parseInt(amount.value);
+  const value = parseInt(amount.value); // parseInt makes number(string) to number
   const random = Math.floor(Math.random() * text.length);
 
-  if (isNaN(value) || value < 0 || value > 9) {
+  if (isNaN(value) || value <= 0 || value > 9) {
     result.innerHTML = `<p class="result">${text[random]}</p>`;
   } else {
     let tempText = text.slice(0, value);
@@ -35,3 +35,17 @@ form.addEventListener("submit", function (e) {
     result.innerHTML = tempText;
   }
 });
+
+/*
+  Recap:
+
+  Objective: write and get from 1-9 paragraphs.
+
+  1. Set variables.
+
+  2. Set submit event for button.
+
+  3. Write if statement so you get one paragraph if input = empty. -1, 0, > 9.
+
+  4. Else paragraphs between 0 and 9.
+*/
