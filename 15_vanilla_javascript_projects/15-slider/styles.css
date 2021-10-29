@@ -224,8 +224,7 @@ Slider
   transform: translate(-50%, -50%);
 }
 .slide:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./img-2.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./img-2.jpeg") center/cover no-repeat;
 }
 .btn-container {
   display: flex;

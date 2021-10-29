@@ -4,19 +4,19 @@ const prevBtn = document.querySelector(".prevBtn");
 slides.forEach(function (slide, index) {
   slide.style.left = `${index * 100}%`;
 });
+
 let counter = 0;
 nextBtn.addEventListener("click", function () {
   counter++;
   carousel();
 });
-
 prevBtn.addEventListener("click", function () {
   counter--;
   carousel();
 });
 
 function carousel() {
-  // working with slides
+  // working with slides // slide gos around
   // if (counter === slides.length) {
   //   counter = 0;
   // }
@@ -24,7 +24,6 @@ function carousel() {
   //   counter = slides.length - 1;
   // }
   // working with buttons
-
   if (counter < slides.length - 1) {
     nextBtn.style.display = "block";
   } else {
@@ -41,3 +40,13 @@ function carousel() {
 }
 
 prevBtn.style.display = "none";
+
+/*
+  Recap:
+
+  Objective: Create two slidshow examples.
+
+  1. Slideshow starts with two buttons and once you pass last slide it gos to first, same backwards.
+
+  2. Slideshow starts with only next button and ends with prev button. After last slide it can go only back.
+*/
