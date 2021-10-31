@@ -146,9 +146,7 @@ function addToLocalStorage(id, value) {
 }
 
 function getLocalStorage() {
-  return localStorage.getItem("list")
-    ? JSON.parse(localStorage.getItem("list"))
-    : [];
+  return localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) : [];
 }
 
 function removeFromLocalStorage(id) {
@@ -216,3 +214,21 @@ function createListItem(id, value) {
   // append child
   list.appendChild(element);
 }
+
+/*
+  Recap:
+
+  Objective: create to do list where you can add delete items.
+
+  1. Add item.
+
+  2. Edit item.
+
+  3. Display and remove alert.
+
+  4. Clear the list.
+
+  5. Delete item.
+
+  6. Local storage.
+*/
