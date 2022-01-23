@@ -338,8 +338,7 @@ span {
 
 @media screen and (max-width: 300px) {
   .contact-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0px;
   }
 }
 
