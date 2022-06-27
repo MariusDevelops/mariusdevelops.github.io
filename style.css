@@ -17,7 +17,6 @@ html {
 }
 
 /* Base styles */
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -56,7 +55,6 @@ img {
 }
 
 /* Navigation */
-
 .nav {
   display: flex;
   justify-content: center;
@@ -91,7 +89,6 @@ nav a:hover .code {
 } */
 
 /* Welcome section */
-
 .welcome-section {
   display: flex;
   flex-direction: row;
@@ -201,7 +198,6 @@ span {
 }
 
 /* Projects section */
-
 .projects-section {
   text-align: center;
   padding: 100px 20px;
@@ -335,7 +331,6 @@ span {
 }
 
 /* Contact section */
-
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -382,7 +377,6 @@ span {
 }
 
 /* Footer */
-
 footer {
   font-weight: 300;
   display: flex;
