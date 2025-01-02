@@ -1,4 +1,5 @@
 :root {
+  --text: #8a8a8a;
   --text-heading: #cacaca;
   --main-purple: #8f79f2;
   --grey-shadow: #202020;
@@ -22,7 +23,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.9;
-  color: var(--text-heading);
+  color: var(--text);
   background-color: var(--grey);
 }
 
@@ -34,11 +35,16 @@ h2 {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 42px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 29px;
+  color: var(--text-heading);
+}
+
+h3 {
+  font-size: 19px;
 }
 
 ul {
@@ -92,7 +98,7 @@ nav a:hover .code {
 /* Welcome section */
 .welcome-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
@@ -101,31 +107,31 @@ nav a:hover .code {
 }
 
 .ws1 {
-  height: 450px;
-  width: 500px;
-  border-right: solid var(--grey-shadow);
-  border-width: 1px;
+  /* height: 450px; */
+  width: 800px;
+  /* border-right: solid var(--grey-shadow); */
+  /* border-width: 1px; */
 }
 
-#subheading {
+/* #subheading {
   font-size: 45px;
   font-weight: 600;
   margin: 0px 0;
-}
+} */
 
-#subheading span {
+/* #subheading span {
   color: var(--main-purple);
   padding: 0px 0px 50px 0px;
-}
+} */
 
-span {
+/* span {
   color: var(--main-purple);
   font-weight: 600;
-}
+} */
 
 .ws1 h1 {
   text-align: left;
-  font-size: 45px;
+  /* font-size: 45px; */
   padding: 0px 20px 0px 20px;
 }
 
@@ -137,8 +143,8 @@ span {
 .ws2 {
   text-align: left;
   padding: 10px 20px 10px 20px;
-  height: 450px;
-  width: 400px;
+  /* height: 450px; */
+  /* width: 400px; */
 }
 
 .ws2 h2 {
