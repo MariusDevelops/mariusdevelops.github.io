@@ -101,60 +101,23 @@ nav a:hover .code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: left;
   width: 100%;
   height: 100vh;
 }
 
 .ws1 {
-  /* height: 450px; */
+  height: 350px;
   width: 800px;
-  /* border-right: solid var(--grey-shadow); */
-  /* border-width: 1px; */
-}
-
-/* #subheading {
-  font-size: 45px;
-  font-weight: 600;
-  margin: 0px 0;
-} */
-
-/* #subheading span {
-  color: var(--main-purple);
-  padding: 0px 0px 50px 0px;
-} */
-
-/* span {
-  color: var(--main-purple);
-  font-weight: 600;
-} */
-
-.ws1 h1 {
-  text-align: left;
-  /* font-size: 45px; */
-  padding: 0px 20px 0px 20px;
-}
-
-.ws1 p {
-  text-align: left;
-  padding: 0px 50px 20px 20px;
 }
 
 .ws2 {
-  text-align: left;
-  padding: 10px 20px 10px 20px;
-  /* height: 450px; */
-  /* width: 400px; */
+  text-align: center;
 }
 
-.ws2 h2 {
-  text-align: left;
-  padding: 10px 20px 10px 20px;
-}
-
-.ws2 p {
-  text-align: left;
-  padding: 0px 20px 0px 20px;
+.funFact {
+  height: 30px;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 800px) {
@@ -308,6 +271,8 @@ nav a:hover .code {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 5px;
+  border: none;
+  color: var(--text-heading);
 }
 
 .btn-show-all {
@@ -317,7 +282,8 @@ nav a:hover .code {
 }
 
 .btn-show-all:hover {
-  background: var(--main-white);
+  background: var(--grey);
+  cursor: pointer;
 }
 
 .btn-show-all:hover i {
