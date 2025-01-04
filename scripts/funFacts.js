@@ -12,7 +12,6 @@ const funFacts = [
   "Worked in a windmill for electricity generation.",
   "Spent time living in Berlin.",
   "Lived in London.",
-  "Created graffiti art at night.",
 ];
 
 const button = document.getElementById("funFactButton");

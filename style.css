@@ -109,6 +109,11 @@ nav a:hover .code {
 .ws1 {
   height: 350px;
   width: 800px;
+  text-align: center;
+}
+
+#heading {
+  margin-bottom: 20px;
 }
 
 .ws2 {
@@ -170,7 +175,11 @@ nav a:hover .code {
 
 .projects-section-header {
   max-width: 640px;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 50px auto;
+}
+
+.notes {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 287px) {
@@ -267,22 +276,27 @@ nav a:hover .code {
 }
 /* TITLE HOVER ENDS */
 
+/* button {
+  color: black;
+} */
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 5px;
   border: none;
-  color: var(--text-heading);
 }
 
 .btn-show-all {
   font-size: 2rem;
   background: var(--main-purple);
   transition: background 0.3s ease-out;
+  color: var(--grey);
 }
 
 .btn-show-all:hover {
   background: var(--grey);
+  color: var(--text-heading);
   cursor: pointer;
 }
 
@@ -327,8 +341,9 @@ nav a:hover .code {
   justify-content: center;
   width: 100%;
   max-width: 980px;
-  margin-top: 40px;
+  margin-top: 100px;
   flex-wrap: wrap;
+  color: var(--text-heading);
 }
 
 .contact-details {
